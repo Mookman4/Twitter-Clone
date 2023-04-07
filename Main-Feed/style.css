@@ -1,0 +1,171 @@
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6ecf0;
+  height: 53px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 53px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+a {
+  color: #1da1f2;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: #f5f8fa;
+  border-radius: 50%;
+}
+
+.home:before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url(https://abs.twimg.com/icons/apple-touch-icon-192x192.png)
+    no-repeat center center;
+  background-size: contain;
+}
+
+.notifications:before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: url(https://abs.twimg.com/icons/apple-touch-icon-192x192.png)
+    no-repeat center center;
+  background-size: contain;
+}
+
+.messages:before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: url(https://abs.twimg.com/icons/apple-touch-icon-192x192.png)
+    no-repeat center center;
+  background-size: contain;
+}
+
+.bookmarks:before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: url(https://abs.twimg.com/icons/apple-touch-icon-192x192.png)
+    no-repeat center center;
+  background-size: contain;
+}
+
+.lists:before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: url(https://abs.twimg.com/icons/apple-touch-icon-192x192.png)
+    no-repeat center center;
+  background-size: contain;
+}
+
+.profile:before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url(https://abs.twimg.com/icons/apple-touch-icon-192x192.png)
+    no-repeat center center;
+  background-size: contain;
+}
+
+.more:before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url(https://abs.twimg.com/icons/apple-touch-icon-192x192.png)
+    no-repeat center center;
+  background-size: contain;
+}
+
+.tweet {
+  background-color: #1da1f2;
+  border-radius: 20px;
+  margin-left: 10px;
+  padding: 10px 16px;
+}
+
+.tweet a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.search {
+  margin-right: 10px;
+}
+
+.search input[type="text"] {
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 8px 16px;
+}
+
+.search button[type="submit"] {
+  background-color: transparent;
+  border: none;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f5f8fa;
+  overflow-x: hidden;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav li {
+  padding: 10px 16px;
+}
+
+.sidenav li a {
+  display: block;
+  color: #1da1f2;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sidenav li a:hover {
+  background-color: #e8f5fe;
+}

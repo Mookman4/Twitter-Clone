@@ -3,10 +3,9 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
   const password = document.getElementById("password").value;
 
-  // Add code here to validate the username and password
-
-  // If the username and password are valid, submit the form
   form.submit();
 });
