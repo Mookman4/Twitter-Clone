@@ -1,0 +1,27 @@
+{
+  "title": "Leucosin/SignIn",
+  "logo": "https://abs.twimg.com/sticky/illustrations/twitter-bird-white-on-blue.svg",
+  "fields": [
+    {
+      "label": "Phone, email, or username",
+      "name": "username",
+      "type": "text",
+      "placeholder": "Phone, email, or username"
+    },
+    {
+      "label": "Password",
+      "name": "password",
+      "type": "password",
+      "placeholder": "Password"
+    }
+  ],
+  "button": {
+    "label": "Log in",
+    "type": "submit"
+  },
+  "forgotPassword": true,
+  "signUp": {
+    "label": "New to Leucosin? Sign up now",
+    "link": "http://localhost:3000/register"
+  }
+}
