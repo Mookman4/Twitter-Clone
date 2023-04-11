@@ -1,18 +1,34 @@
-// Initialize Firebase
+// Firebase REST API URL
+const firebaseUrl =
+  "https://twitter-clone-official-default-rtdb.firebaseio.com/";
 
-const app = initializeApp(firebaseConfig);
+// Get references to the form fields
+const usernameField = document.getElementById("username");
+const passwordField = document.getElementById("password");
 
-const analytics = getAnalytics(app);
+// Listen for the form submit event
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault(); // Prevent the form from submitting normally
 
-const form = document.querySelector("form");
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
+  // Build the authentication endpoint URL
+  const authUrl = `${firebaseUrl}users.json?orderBy="username"&equalTo="${usernameField.value}"&print=pretty`;
 
-  const username = document.getElementById("username").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const password = document.getElementById("password").value;
+  // Make a GET request to the authentication endpoint
+  fetch(authUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      const userData = Object.values(data)[0]; // Get the first user object from the data
 
-  form.submit();
+      // Check if the password matches
+      if (userData.password === passwordField.value) {
+        // Log the user in
+        alert("Logged in successfully");
+      } else {
+        // Display an error message
+        alert("Invalid username or password");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 });
-// Import the functions you need from the SDKs you need
