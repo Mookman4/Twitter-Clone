@@ -3,7 +3,7 @@ let jsonEXT = ".json"; // .json is the extension for Firebase
 
 // Wait for the HTML to finish loading
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the form elements defined in your form HTML above
+  // Get the form elements
 
   const fullNameInput = document.getElementById("name");
   const usernameInput = document.getElementById("username");
