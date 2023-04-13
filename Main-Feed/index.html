@@ -1,377 +1,358 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Leucosin/Home</title>
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css'>
-  <!-- Custom css-->
-  <link rel="stylesheet" href="/Main-Feed/style.css">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1" />
+    <title>Twitter Clone</title>
 
-  
-</head>
-
-<body>
-  <!-- Fixed top navbar -->
-<nav class="navbar navbar-toggleable-md fixed-top">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse container">
-    <!-- Navbar navigation links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="octicon octicon-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="octicon octicon-zap"></i> Reactions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="octicon octicon-bell"></i> Notifications</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="octicon octicon-inbox"></i> Messages</a>
-      </li>
-    </ul>
-    <!-- END: Navbar navigation links -->
-    <!-- Navbar Search form -->
-    <form class="navbar-form" role="search">
-      <div class="input-group">
-        <input type="text" class="form-control input-search" placeholder="Search" name="srch-term" id="srch-term">
-        <div class="input-group-btn">
-          <button class="btn btn-default btn-search" type="submit"><i class="octicon octicon-search navbar-search-icon"></i></button>
-        </div>
-      </div>
-    </form>
-    <!-- END: Navbar Search form -->
-    <!-- Navbar User menu -->
-    <div class="dropdown navbar-user-dropdown">
-      <button class="btn btn-secondary dropdown-toggle btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Settings</a>
-        <a class="dropdown-item" href="http://127.0.0.1:5500/Sign-In/index.html">Login</a>
-        <a class="dropdown-item" href="http://127.0.0.1:5500/Register/index.html">Register</a>
-      </div>
-    </div>
-    <!-- END: Navbar User menu -->
-    <!-- Navbar Tweet button -->
-    <button class="btn btn-search-bar">Tweet</button>
-  </div>
-</nav>
-<!-- END: Fixed top navbar -->
-<div class="main-container">
-  <!-- Profile background large image -->
-  <div class="row profile-background">
+    <link rel="stylesheet" href="/Main-Feed/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1286d21307.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <div class="container">
-	  <!-- User main avatar -->
-      <div class="avatar-container">
-        <div class="avatar">
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <nav class="navbar profile-stats">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-
-        </div>
-        <div class="col-6">
-          <ul>
-            <li class="profile-stats-item-active">
-              <a>
-                <span class="profile-stats-item profile-stats-item-label">Posts</span>
-                <span class="profile-stats-item profile-stats-item-number">1.4K</span>
-              </a>
+        <nav class="left-menu">
+          <ul style="list-style-type:none;" class="menu-icons">
+            <li class="dissappear">
+              <div class="hover-wrapper twitter-color logo-container">
+                <span class="logo"><i class="fab fa-twitter"></i></span>
+              </div>
             </li>
             <li>
-              <a>
-                <span class="profile-stats-item profile-stats-item-label">Following</span>
-                <span class="profile-stats-item profile-stats-item-number">10</span>
-              </a>
+              <div class="hover-wrapper twitter-color">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="menu-text">Home</span>
+              </div>
+            </li>
+            <li class="mobile-icon">
+              <div class="hover-wrapper appear">
+                <span class="icon icon-style">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+            </li>
+            <li class="dissappear">
+              <div class="hover-wrapper">
+                <span class="icon"><i class="fas fa-hashtag"></i></span>
+                <span class="menu-text">Explore</span>
+              </div>
             </li>
             <li>
-              <a>
-                <span class="profile-stats-item profile-stats-item-label">Followers</span>
-                <span class="profile-stats-item profile-stats-item-number">124K</span>
-              </a>
+              <div class="hover-wrapper">
+                <span class="icon icon-style"><i class="far fa-bell"></i></span>
+                <span class="menu-text">Notifications</span>
+              </div>
             </li>
             <li>
-              <a>
-                <span class="profile-stats-item profile-stats-item-label">Likes</span>
-                <span class="profile-stats-item profile-stats-item-number">10.5M</span>
-              </a>
+              <div class="hover-wrapper">
+                <span class="icon icon-style"><i class="far fa-envelope"></i></span>
+                <span class="menu-text">Messages</span>
+              </div>
+            </li>
+            <li class="dissappear">
+              <div class="hover-wrapper">
+                <span class="icon"><i class="far fa-bookmark"></i></span>
+                <span class="menu-text">Bookmarks</span>
+              </div>
+            </li>
+            <li class="dissappear">
+              <div class="hover-wrapper">
+                <span class="icon"><i class="far fa-list-alt"></i></span>
+                <span class="menu-text">Lists</span>
+              </div>
+            </li>
+            <li class="dissappear">
+              <div class="hover-wrapper">
+                <img class="profile-pic" src="./profile.jpg"></img>
+                <span class="menu-text">Profile</span>
+              </div>
+            </li>
+            <li class="dissappear">
+              <div class="hover-wrapper">
+                <span class="icon"><i class="fas fa-ellipsis-h"></i></span>
+                <span class="menu-text">More</span>
+              </div>
+            </li>
+            <li>
+              <div class="hover-wrapper">
+                <button class="tweet-modal-button" type="button" name="button">
+                  <span class="tweet-model-button-text">Tweet</span>
+                  <span class="tweet-model-button-icon">
+                    <i class="fas fa-feather-alt"></i>
+                  </span>
+                </button>
+              </div>
             </li>
           </ul>
-        </div>
-        <div class="col">
+        </nav>
 
+        <div class="twitter-container">
+          <header>
+            <span class="profile-container">
+              <span class="mobile-profile-pic">
+                <img class="profile-pic" src="./profile.jpg"></img>
+              </span>
+              <h1 id="main-page-home-header">
+                Home
+              </h1>
+            </span>
+
+            <i class="far fa-star twitter-color"></i>
+          </header>
+
+          <div class="compose-tweet">
+            <div class="compose-profile-container">
+              <img class="compose-profile" src="./profile.jpg">
+              </img>
+
+              <textarea
+                name="name"
+                placeholder="What's on your mind?"></textarea>
+            </div>
+            <div class="compose-buttons-icons">
+              <div class="compose-icons">
+                <div class="compose-icon">
+                  <i class="far fa-image"></i>
+                </div>
+
+                <div class="compose-icon">
+                  <i class="fas fa-poll-h"></i>
+                </div>
+
+                <div class="compose-icon">
+                  <i class="far fa-smile"></i>
+                </div>
+              </div>
+
+              <div>
+                <button class="compose-button" type="button" name="button">Tweet</button>
+              </div>
+            </div>
+
+            <div class="separator">
+            </div>
+          </div>
+
+          <div class="twitter-posts">
+            <div class="tweet-post">
+              <div class="compose-profile-container">
+                <img class="compose-profile" src="./raps_logo.png">
+                </img>
+
+                  <div class="tweet-profile-content-container">
+                    <div class="tweet-profile-title-container">
+                      <div class="tweet-profile-info">
+                        <div class="tweet-profile-title">
+                          Toronto Raptors
+                        </div>
+
+                        <div class="tweet-check-mark">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+
+                        <div class="tweet-handle">
+                          @Raptors · 2m
+                        </div>
+                      </div>
+
+                      <div class="tweet-profile-options-container">
+                        <div class="tweet-option">
+                          <i class="fas fa-chevron-down"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tweet-content">
+                      Jeremy Lin is a champ!!!!! #Raptors2019Champs
+                    </div>
+                  </div>
+                </div>
+
+                <div class="img-placeholder">
+                  <img class="tweet-photo" src="./raptors-jlin.jpg" alt="Jeremy Lin">
+                </div>
+
+                <div class="tweet-buttons">
+                  <div class="buttons-container">
+                    <i class="far fa-comment"></i>
+                    <div class="number-comments">
+                      600
+                    </div>
+                  </div>
+
+                  <div class="buttons-container">
+                    <i class="fas fa-retweet"></i>
+                    <div class="number-retweets">
+                      77
+                    </div>
+                  </div>
+
+                  <div class="buttons-container">
+                    <i class="far fa-heart"></i>
+                    <div class="number-likes">
+                      934
+                    </div>
+                  </div>
+
+                  <div class="buttons-container">
+                    <i class="fas fa-arrow-up"></i>
+                  </div>
+                </div>
+            </div>
+
+            <div class="tweet-post">
+              <div class="compose-profile-container">
+                <img class="compose-profile" src="./dallas_cowboys.jpg">
+                </img>
+
+                  <div class="tweet-profile-content-container">
+                    <div class="tweet-profile-title-container">
+                      <div class="tweet-profile-info">
+                        <div class="tweet-profile-title">
+                          Dallas Cowboys
+                        </div>
+
+                        <div class="tweet-check-mark">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+
+                        <div class="tweet-handle">
+                          @dallascowboys · 15m
+                        </div>
+                      </div>
+
+                      <div class="tweet-profile-options-container">
+                        <div class="tweet-option">
+                          <i class="fas fa-chevron-down"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tweet-content">
+                      COWBOYS POSTGAME: Hear from Coach Garrett and the #DallasCowboys locker room following #BUFvsDAL
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tweet-buttons">
+                  <div class="buttons-container">
+                    <i class="far fa-comment"></i>
+                    <div class="number-comments">
+                      600
+                    </div>
+                  </div>
+
+                  <div class="buttons-container">
+                    <i class="fas fa-retweet"></i>
+                    <div class="number-retweets">
+                      77
+                    </div>
+                  </div>
+
+                  <div class="buttons-container">
+                    <i class="far fa-heart"></i>
+                    <div class="number-likes">
+                      934
+                    </div>
+                  </div>
+
+                  <div class="buttons-container">
+                    <i class="fas fa-arrow-up"></i>
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
-      </div>
+
+        <aside class="right-menu">
+          <div class="search">
+            <span class="search-bar-icon">
+              <i class="fas fa-search"></i>
+            </span>
+            <input class="search-bar" type="text"/>
+          </div>
+
+          <div class="trends-continer">
+            <div class="trends-title-lines">
+              <div class="trends-title-container">
+                <div class="trends-title">
+                  Trends for you
+                </div>
+                <i class="fas fa-cog"></i>
+              </div>
+            </div>
+
+            <div class="trending-post">
+              <div class="trending-info">
+                <div class="trending-country-options-container">
+                  <div class="trending-country">
+                    Trending in Canada
+                  </div>
+                  <div class="trending-options">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="trending-post-title">
+                  Cowboys
+                </div>
+                <div class="trending-post-detail">
+
+                </div>
+                <div class="trending-post-number-tweets">
+                  2,546 Tweets
+                </div>
+              </div>
+            </div>
+
+            <div class="trending-post">
+              <div class="trending-info">
+                <div class="trending-country-options-container">
+                  <div class="trending-country">
+                    Trending in Canada
+                  </div>
+                  <div class="trending-options">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="trending-post-title">
+                  Jason Garrett
+                </div>
+                <div class="trending-post-detail">Trending with: Jerry Jones, #FireJasonGarrett, Jerry</div>
+                <div class="trending-post-number-tweets">
+                  2,546 Tweets
+                </div>
+              </div>
+            </div>
+
+            <div class="trending-post">
+              <div class="trending-info">
+                <div class="trending-country-options-container">
+                  <div class="trending-country">
+                    Trending in Canada
+                  </div>
+                  <div class="trending-options">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="trending-post-title">
+                  Dak Prescott
+                </div>
+                <div class="trending-post-detail">
+
+                </div>
+                <div class="trending-post-number-tweets">
+                  7,548 Tweets
+                </div>
+              </div>
+            </div>
+
+            <div class="trends-show-more">
+              Show more
+            </div>
+          </div>
+        </aside>
     </div>
-  </nav>
-  <div class="container main-content">
-    <div class="row">
-      <div class="col profile-col">
-        <!-- Left column -->
-        <div class="profile-header">
-          <!-- Header information -->
-          <h3 class="profile-fullname"><a>Gavin Johnson<a></h3>
-          <h2 class="profile-element"><a>@GavinJohnson</a></h2>
-          <a class="profile-element profile-website" hrerf=""><i class="octicon octicon-link"></i>&nbsp;Leucosin.com</a>
-          <a class="profile-element profile-website" hrerf=""><i class="octicon octicon-location"></i>&nbsp;McDonough, GA</a>
-          <h2 class="profile-element"><i class="octicon octicon-calendar"></i>Joined November 2012</h2>
-          <button class="btn btn-search-bar tweet-to-btn">Message to Gavin Johnson</button>
-          <a class="profile-element profile-website" hrerf=""><i class="octicon octicon-file-media"></i>1,142 Photos and videos</a>
-          <div class="pic-grid">
-            <!-- Image grid -->
-            <div class="row">
-              <div class="col pic-col"><img src="https://pbs.twimg.com/media/DFCq7iTXkAADXE-.jpg:thumb" height="73px" class=""></div>
-              <div class="col pic-col"><img src="https://pbs.twimg.com/media/DEoQ0vyXoBA1cwQ.png:thumb" height="73px" class=""></div>
-              <div class="col pic-col"><img src="https://pbs.twimg.com/media/DDVbW4RXsAAasuw.jpg:thumb" height="73px" class=""></div>
-            </div>
-            <!-- End: row -->
-            <div class="row">
-              <div class="col pic-col"><img src="https://pbs.twimg.com/media/DFCq7iTXkAADXE-.jpg:thumb" height="73px" class=""></div>
-              <div class="col pic-col"><img src="https://pbs.twimg.com/media/DEoQ0vyXoBA1cwQ.png:thumb" height="73px" class=""></div>
-              <div class="col pic-col"><img src="https://pbs.twimg.com/media/DDVbW4RXsAAasuw.jpg:thumb" height="73px" class=""></div>
-            </div>
-            <!-- End: row -->
-          </div>
-          <!-- End: image grid -->
-        </div>
-      </div>
-      <!-- End; Left column -->
-      <!-- Center content column -->
-      <div class="col-6">
-        <ol class="tweet-list">
-          <li class="tweet-card">
-            <div class="tweet-content">
-              <div class="tweet-header">
-                <span class="fullname">
-                  <strong>Gavin Johnson</strong>
-                </span>
-                <span class="username">@GavinJohnson</span>
-                <span class="tweet-time">- Jul 18</span>
-              </div>
-              <a>
-                <img class="tweet-card-avatar" src="/user-solid-24.png" alt="">
-              </a>
-              <div class="tweet-text">
-                <p class="" lang="es" data-aria-label-part="0">I don't always procrastinate, but when I do, I make sure to do it at an expert level. 
-                </p>
-              </div>
-              <div class="tweet-footer">
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="tweet-card">
-            <div class="tweet-content">
-              <div class="tweet-header">
-                <span class="fullname">
-                  <strong>Gavin Johnson</strong>
-                </span>
-                <span class="username">@GavinJohnson</span>
-                <span class="tweet-time">- Jul 18</span>
-              </div>
-              <a>
-                <img class="tweet-card-avatar" src="/user-solid-24.png" alt="">
-              </a>
-              <div class="tweet-text">
-                <p class="" lang="es" data-aria-label-part="0">I tried to start a hot air balloon business, but it never really took off.
-                </p>
-              </div>
-              <div class="tweet-footer">
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="tweet-card">
-            <div class="tweet-content">
-              <div class="tweet-header">
-                <span class="fullname">
-                  <strong>Gavin Johnson</strong>
-                </span>
-                <span class="username">@GavinJohnson</span>
-                <span class="tweet-time">- Jul 18</span>
-              </div>
-              <a>
-                <img class="tweet-card-avatar" src="/user-solid-24.png" alt="">
-              </a>
-              <div class="tweet-text">
-                <p class="" lang="es" data-aria-label-part="0">I'm not lazy, I'm just conserving my energy for more important things like binge-watching Netflix.
-                </p>
-              </div>
-              <div class="tweet-footer">
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="tweet-card">
-            <div class="tweet-content">
-              <div class="tweet-header">
-                <span class="fullname">
-                  <strong>Gavin Johnson</strong>
-                </span>
-                <span class="username">@GavinJohnson</span>
-                <span class="tweet-time">- Jul 18</span>
-              </div>
-              <a>
-                <img class="tweet-card-avatar" src="/user-solid-24.png" alt="">
-              </a>
-              <div class="tweet-text">
-                <p class="" lang="es" data-aria-label-part="0">I just realized that 'Ctrl + Alt + Del' is a three-finger salute to my problems. 
-                </p>
-              </div>
-              <div class="tweet-footer">
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="tweet-card">
-            <div class="tweet-content">
-              <div class="tweet-header">
-                <span class="fullname">
-                  <strong>Gavin Johnson</strong>
-                </span>
-                <span class="username">@GavinJohnson</span>
-                <span class="tweet-time">- Jul 18</span>
-              </div>
-              <a>
-                <img class="tweet-card-avatar" src="/user-solid-24.png" alt="">
-              </a>
-              <div class="tweet-text">
-                <p class="" lang="es" data-aria-label-part="0">I'm not saying I'm Batman, but have you ever seen me and Batman in the same room together? Exactly. 
-                </p>
-              </div>
-              <div class="tweet-footer">
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
-                </a>
-                <a class="tweet-footer-btn">
-                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
-                </a>
-              </div>
-            </div>
-          </li>
-        </ol>
-        <!-- End: tweet list -->
-      </div>
-      <!-- End: Center content column -->
-      <div class="col right-col">
-        <div class="content-panel">
-          <div class="panel-header">
-            <h4>Who to follow</h4><small><a href="">Refresh</a></small><small><a href="">View all</a></small>
-          </div>
-          <!-- Who to Follow panel -->
-          <div class="panel-content">
-            <!--Follow list -->
-            <ol class="tweet-list">
-              <li class="tweet-card">
-                <div class="tweet-content">
-                  <img class="tweet-card-avatar" src="/user-solid-24.png" alt="">
-                  <div class="tweet-header">
-                    <span class="fullname">
-                  <strong>Gavin Johnson</strong>
-                </span>
-                    <span class="username">@GavinJohnson</span>
-                  </div>
-
-                  <button class="btn btn-follow">Follow</button>
-                </div>
-              </li>
-              <li class="tweet-card">
-                <div class="tweet-content">
-                  <img class="tweet-card-avatar" src="/user-solid-24.png" alt="">
-                  <div class="tweet-header">
-                    <span class="fullname">
-                  <strong>Gavin Johnson</strong>
-                </span>
-                    <span class="username">@GavinJohnson</span>
-                  </div>
-
-                  <button class="btn btn-follow">Follow</button>
-                </div>
-              </li>
-              <li class="tweet-card">
-                <div class="tweet-content">
-                  <img class="tweet-card-avatar" src="/user-solid-24.png" alt="">
-                  <div class="tweet-header">
-                    <span class="fullname">
-                  <strong>Gavin Johnson</strong>
-                </span>
-                    <span class="username">@GavinJohnson</span>
-                  </div>
-
-                  <button class="btn btn-follow">Follow</button>
-                </div>
-              </li>
-            </ol>
-            <!--END: Follow list -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src='https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
-
-</body>
+  </body>
 </html>
